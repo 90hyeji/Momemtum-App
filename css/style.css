@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 42px;
+}
+h3 {
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.login input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid purple;
+    width: 260px;
+    height: 30px;
+    font-family: VcrOsdMono, "VCR OSD Mono", Helvetica, Verdana, sans-serif;
+    color: pink;
+    font-size: 24px;
+    text-align: center;
+    outline:transparent;
+}
+
+.login input::placeholder {
+    color: pink;
+    font-family: VcrOsdMono, "VCR OSD Mono", Helvetica, Verdana, sans-serif;
+}
+
+.background-layer-login {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    color: aliceblue;
+}
+
+.background-layer-main {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    align-content: space-between;
+    color: whitesmoke;
+    z-index: 3;
+}
+
+#greeting {
+    position: relative;
+    top: 130px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left:100px;
+    font-size: 50px;
+    color: rgb(245, 212, 217);
+}
+
+#greeting2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+#quote {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed; bottom:0; left: 0;
+    margin: 32px; color: rgba(255, 255, 255,0.8)
+}
+
+#todos {
+    position: fixed; bottom: 120px; left: 0;
+    margin: 32px;
+}
+
+#clockandweather {
+    margin: 32px;
+    color: rgb(245, 212, 217);
+}
+
+.todoinput {
+    background: none;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    width: 260px;
+    height: 30px;
+    font-family: VcrOsdMono, "VCR OSD Mono", Helvetica, Verdana, sans-serif;
+    color: rgb(201, 156, 163);
+    outline:transparent;
+}
+
+.todoinput::placeholder {
+    color: rgb(218, 152, 196);
+    font-weight: 600;
+}
+
+#todo-list{
+    font-family: VcrOsdMono, "VCR OSD Mono", Helvetica, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+#todo-list li {
+    font-size: 15px;
+}
+
+#todo-list button {
+    background: none;
+    border:none;
+    color :whitesmoke;
+    font-size: 10px;
+}
+
+#clockandweather {
+    position: fixed; right:0; top: 0;
+}
+
+#clock {
+    font-family:cursive;
+    font-size: 60px;
+}
+
+#weather {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+#music {
+    flex-basis: 100%;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#music #playbtn span{
+    margin: 10px;
+}
+
+#music #player {
+    display: none;
+}
+
+
